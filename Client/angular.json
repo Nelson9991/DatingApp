@@ -66,6 +66,9 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
+            "sslKey": "./ssl/server.key",
+            "sslCert": "./ssl/server.crt",
+            "ssl": true,
             "browserTarget": "client:build"
           },
           "configurations": {
@@ -123,6 +126,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "client"
+    }
+  },
+  "defaultProject": "client",
+  "cli": {
+    "analytics": "e691a636-740b-4f5e-b687-b874a2f6d132"
+  }
 }
